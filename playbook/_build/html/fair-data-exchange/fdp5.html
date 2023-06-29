@@ -1,0 +1,686 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Metadata Standards &#8212; Playbook for Health Data Sharing Ecosystems</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Schematics" href="dia1.html" />
+    <link rel="prev" title="Matching Layers" href="fdp4.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Playbook for Health Data Sharing Ecosystems</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to the Playbook for Health Data Sharing Ecosystems
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Data Sharing Approaches
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../data-sharing-approaches/dss1.html">
+   Introduction to Data Sharing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../data-sharing-approaches/dss2.html">
+   Copy and Download
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../data-sharing-approaches/dss3.html">
+   Researcher to Data
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../data-sharing-approaches/dss4.html">
+   Model to Data
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  FAIR Data Exchange
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="IntroFAIR.html">
+   Introduction to FAIR Data
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="findable.html">
+   Findable
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="f1.html">
+     Persistent Identifiers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="f2.html">
+     Rich Metadata
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="f3.html">
+     Metadata Linkage
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="f4.html">
+     Data Indexing
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="accessible.html">
+   Accessible
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="a1.html">
+     Retrievable Metadata
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="a2.html">
+     Persistent Metadata
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="interoperable.html">
+   Interoperable
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="i1.html">
+     Knowledge Representation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="i2.html">
+     Vocabularies
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="i3.html">
+     Qualified References
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="reusable.html">
+   Reusable
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="r1.html">
+     Rich Metadata
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="fdp1.html">
+   FAIR Data Points
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="fdp2.html">
+     Building Blocks
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="fdp3.html">
+   Metadata Layer
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="fdp4.html">
+     Matching Layers
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Metadata Standards
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="dia1.html">
+   Schematics
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dia2.html">
+     Data Integration Workflow
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dia3.html">
+     Data Sharing Workflow
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dia4.html">
+     Data Integration Architecture
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dia5.html">
+     Data Sharing Architecture
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Privacy-Enhancing Technologies (PET)
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../privacy-enhancing-technologies/IntroPET.html">
+   Introduction to PETs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../privacy-enhancing-technologies/pet1.html">
+   Data Minimalization
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../privacy-enhancing-technologies/pet2.html">
+   Algorithmic PETs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../privacy-enhancing-technologies/pet3.html">
+   Model-to-Data PETs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../privacy-enhancing-technologies/pet4.html">
+   Augmentation PETs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../privacy-enhancing-technologies/pet5.html">
+   Concluding remarks and variations of the techniques and solutions
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Legislation
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../legislation/IntroLegal.html">
+   Introduction to the Legislation for Data Sharing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../legislation/legal1.html">
+   Basic Principles of the GDPR
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../legislation/legal2.html">
+   WGBO - Medical Treatment Agreement Act
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../legislation/legal3.html">
+   WMO - Medical-Scientific Research with Persons
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../legislation/legalCTR.html">
+   CTR - Clinical Trial Directive and Regulation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../legislation/legal4.html">
+   WEGIZ - Electronic Data Exchange in Healthcare Act
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../legislation/legal5.html">
+   MDR -	Medical Device Regulation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../legislation/legal6.html">
+   Wabvpz - Supplementary Provisions for the Processing of Personal Data in Healthcare Act
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../legislation/legal7.html">
+   96/9/EC - The Database Directive
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../legislation/legal8.html">
+   2004/23/EC - Human tissues and cell directive
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/dualslash/The-FAIR-Handbook"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/dualslash/The-FAIR-Handbook/issues/new?title=Issue%20on%20page%20%2Ffair-data-exchange/fdp5.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/fair-data-exchange/fdp5.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Metadata Standards</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="metadata-standards">
+<h1>Metadata Standards<a class="headerlink" href="#metadata-standards" title="Permalink to this headline">#</a></h1>
+</br>
+<p>Most metadata in datasets are added using ontologies. <strong>Ontologies</strong> contain formal specifications of terms and relationships between them. You can think of them as dictionaries, where every word in the dictionary (a concept) has a unique identifier (concept ID) and is described by other words from that dictionary (definitions and relationships).</p>
+<p>Since all concepts in the ontology are unique and defined by their relations with other concepts, they give a good explanation of what the concept means and how it is related to other concepts. There are many different ontologies being created for different types of data. The most relevant and widely used ontologies in the medical domain are SNOMED and FHIR, which we describe below, but many more exist. The type of ontology to apply depends on the specific use-case.</p>
+</br>
+<p>SNOMED CT:</p>
+<ul class="simple">
+<li><p>Is the most comprehensive, multilingual clinical healthcare terminology in the world</p></li>
+<li><p>Is a resource with comprehensive, scientifically validated clinical content</p></li>
+<li><p>Enables consistent representation of clinical content in electronic health records (EHR)</p></li>
+<li><p>Is mapped to other international standards</p></li>
+<li><p>Is in use in more than eighty countries.</p></li>
+</ul>
+</br>
+<p>SNOMED CT supports the development of comprehensive high-quality clinical content in electronic health records. It provides a <strong>standardized</strong> way to represent clinical phrases captured by the clinician and enables automatic interpretation of these phrases.</p>
+</br>
+<p>Fast Healthcare Interoperability Resources (FHIR, pronounced “fire”) is a standard describing data formats and elements (known as “resources”) and an application programming interface (API) for <strong>exchanging</strong> electronic health records (EHR). It defines how healthcare information can be exchanged between different computer systems regardless of how it is stored in those systems, and is seen as complimentary to SNOWMED.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>A more eloborated introduction for implementation of meta data might be found in the <a class="reference external" href="https://faircookbook.elixir-europe.org/content/recipes/introduction/metadata-fair.html">FAIR cookbook of Elixer</a></p>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./fair-data-exchange"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="fdp4.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Matching Layers</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="dia1.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Schematics</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By TNO<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

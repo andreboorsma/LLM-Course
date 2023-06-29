@@ -1,0 +1,73 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+
+parts:
+
+  - caption: Data Sharing Approaches
+    chapters:
+    - file: data-sharing-approaches/intro
+    - file: data-sharing-approaches/copy-and-download
+    - file: data-sharing-approaches/researcher-to-data
+    - file: data-sharing-approaches/model-to-data
+    
+    
+  - caption: FAIR Data Exchange
+    chapters:
+    - file: fair-data-exchange/intro
+    - file: fair-data-exchange/findable/findable
+      sections:
+        - file: fair-data-exchange/findable/persistent-identifiers
+        - file: fair-data-exchange/findable/rich-metadata
+        - file: fair-data-exchange/findable/metadata-linkage
+        - file: fair-data-exchange/findable/data-indexing
+    - file: fair-data-exchange/accessible/accessible
+      sections:
+        - file: fair-data-exchange/accessible/retrievable-metadata
+        - file: fair-data-exchange/accessible/persistent-metadata
+    - file: fair-data-exchange/interoperable/interoperable
+      sections:
+        - file: fair-data-exchange/interoperable/knowledge-representation
+        - file: fair-data-exchange/interoperable/vocabularies
+        - file: fair-data-exchange/interoperable/qualified-references
+    - file: fair-data-exchange/reusable/reusable
+      sections:
+        - file: fair-data-exchange/reusable/reusable-metadata
+    - file: fair-data-exchange/fair-data-points/fair-data-points
+      sections:
+        - file: fair-data-exchange/fair-data-points/building-blocks
+    - file: fair-data-exchange/fair-data-points/metadata-layer
+      sections:
+        - file: fair-data-exchange/fair-data-points/matching-layers
+        - file: fair-data-exchange/fair-data-points/metadata-standards
+    - file: fair-data-exchange/schematics/schematics
+      sections:
+        - file: fair-data-exchange/schematics/data-integration-workflow
+        - file: fair-data-exchange/schematics/data-sharing-workflow
+        - file: fair-data-exchange/schematics/data-integration-architecture
+        - file: fair-data-exchange/schematics/data-sharing-architecture
+        
+        
+  - caption: Privacy-Enhancing Technologies (PET)
+    chapters:
+    - file: privacy-enhancing-technologies/intro
+    - file: privacy-enhancing-technologies/data-minimalization
+    - file: privacy-enhancing-technologies/algorithmic-pets
+    - file: privacy-enhancing-technologies/model-to-data-pets
+    - file: privacy-enhancing-technologies/augmentation-pets
+    - file: privacy-enhancing-technologies/concluding-remarks
+    
+    
+  - caption: Legislation
+    chapters:
+    - file: legislation/intro
+    - file: legislation/basic-principles-of-the-gdpr
+    - file: legislation/medical-treatment-agreement-act
+    - file: legislation/medical-scientific-research-with-persons
+    - file: legislation/clinical-trial-directive-and-regulation
+    - file: legislation/personal-data-in-healthcare-act
+    - file: legislation/the-database-directive
+    - file: legislation/human-tissues-and-cell-directive
+    - file: legislation/medical-device-regulation
