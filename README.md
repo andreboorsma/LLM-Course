@@ -1,11 +1,11 @@
-# The Playbook for Health Data Sharing Ecosystems
+# A beginners guideline for prompt engineering for TNO employees
 
 <img src="https://user-images.githubusercontent.com/9567830/199050409-8e9dc3a5-de2d-416a-9d33-dc7be25a72f0.png" align="right" width="128px"/>
-A complete knowledge base for health data sharing ecosystems using FAIR data and services, made possible by TNO for the National eHealth Living Lab (NeLL).
+An online course for TNO employees to master the art of prompt engineering Large Language Models like ChatGPT.
 
 <br clear="right"/>
 
-<a target="_blank" href="https://tnohealth.github.io/Playbook-Data-Sharing/">
+<a target="_blank" href="https://andreboorsma.github.io/LLM-Course/">
 <img alt="Open Playbook" src="https://user-images.githubusercontent.com/9567830/199052304-ecfedcae-e88e-4c37-838e-fcd9c1b03c87.png" width=137">
 </a>
 </br>
