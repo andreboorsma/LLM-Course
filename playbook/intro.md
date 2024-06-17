@@ -1,10 +1,17 @@
-# Welcome to the Playbook for Health Data Sharing Ecosystems 
+# Online course prompt engineering for TNO employees 
 
 </br>
 
-This playbook is a practical guideline for small and medium-sized enterprises (SMEs) wanting to learn more about _sharing and re-use of health data_. 
+This playbook contains a practical beginners guideline for prompt engineering or the "art of making optimal use of Large Language Models (LLMs) using for TNO employees. 
 
-The objective of this playbook is to facilitate data sharing and ecosystem creation, to enable the use of novel (e)health technology and services as well as to enhance scientific research in health related questions. (e)Health data drawn from health data sources, such as hospitals and personal wearables, are arguably one of the most valuable and sensitive types of data. The value of this type of data is the potential to support research and facilitate product development within healthcare, digital health, public health and many others areas. However, this data is highly sensitive since health data reveals personal information about one’s health conditions, family members, ones psycho-social state and history. 
+## General Outline 
+
+This course is developed for TNO employees who are relatively new to the world of Large Language Models (LLMs) and want to learn how to efficiently make use of these models for example via the application ChatGPT. This ‘art’ is also known as ‘prompt engineering’, a skill that did not exist till late 2023 when OpenAI made ChatGPT available to the general public. The course will cover the basics of prompt engineering and how it can be used to create complex prompt-based applications for scientific research, writing, communication, programming and data science, project leader and business development skills. The use of this models is sometimes referred to a as ‘augmented intelligence’, it holds the potential to make smart people even more smarter.
+
+Prompt engineering is the art of designing and optimizing questions to elicit specific responses from machine learning models, particularly large language models
+Large Language Models Large Language Models (LLMs) are machine learning models trained on vast amounts of text data, capable of generating human-like text based on the patterns they've learned from the training data.
+ChatGPT most examples that are given throughout this course are from ChatGPT. ChatGPT can be found at chat.openai.com. Be sure to read the TNO policies about the use of ChatGPT and other LLMs.
+
 
 This report aims to support  companies steer towards an ecosystem that allows its members to share insights from health data under the appropriate legal, ethical and technical constraints. All these necessary foundational elements making up a health data ecosystem will be touched upon in this book. This playbook is a [dynamic resource that will change over time](https://github.com/dualslash/The-FAIR-Handbook), and will be updated on a regular basis. All changes are publicly accessible through the [commit log](https://github.com/dualslash/The-FAIR-Handbook/commits/main/The-FAIR-Handbook), through which references can be made to specific versions of the book.
 
