@@ -12,7 +12,11 @@ parts:
     - file: data-sharing-approaches/copy-and-download
     - file: data-sharing-approaches/researcher-to-data
     - file: data-sharing-approaches/model-to-data
-    
+
+  - caption: Introduction
+    chapters:
+    - file: Introduction/general-outline
+    - file: Introduction/Guidelines-TNO
     
   - caption: FAIR Data Exchange
     chapters:
